@@ -14,7 +14,11 @@
 </head>
 <body>
     <aside>
-        <img src="{% static 'main/img/bozo.png' %}" alt="Лого">
+        <div class="logoname">
+            <a href="{% url 'home' %}">
+                <img src="{% static 'main/img/bozo.png' %}" alt="Лого">
+            </a>
+        </div>
         <span class="logo">Bozo</span>
         <h3 class="navi">Навигация</h3>
         <ul>
@@ -24,9 +28,12 @@
             <a href="{% url 'contacts' %}"><li><i class="fa-solid fa-address-book"></i> Контакты </li></a>
             <a href="{% url 'suggestions_home' %}"><li><i class="fa-solid fa-angles-up"></i> Предложения </li></a>
             <a href="{% url 'create' %}"><li><button class="btn btn-info"><i class="fa-solid fa-circle-plus"></i> Предложить улучшение </button></li></a>
-
+            <div class="invite">
+                <a href="https://discord.com/api/oauth2/authorize?client_id=1101692412570632192&permissions=8&scope=bot"><li><button class="btn btn-secondary"><i class="fa-solid fa-user-plus"></i> Пригласить бота на сервер </li></a>
+            </div>
         </ul>
     </aside>
+    
     <main>
         {% block content %}
         {% endblock %}
