@@ -31,6 +31,7 @@ aside .logo {
 
 aside .navi {
     margin-top: 40px;
+    margin-left: 20px;
     font-size: 25px;
     text-decoration: none;
 }
@@ -46,7 +47,6 @@ aside ul li{
     margin-top: 13px;
     transition: transform .4s ease;
     text-decoration: none;
-
 }
 
 aside ul li:hover, aside ul a:hover {
@@ -57,10 +57,11 @@ aside ul li:hover, aside ul a:hover {
 
 main .features {
     float: left;
-    color: #22034b;
+    color: #23FAED;
     margin-top: 100px;
     text-align: center;
     width: 75%;
+    position: center;
 }
 
 main .features h1 {
@@ -68,7 +69,10 @@ main .features h1 {
     color: #fff;
     margin-top: -15px;
 }
-main .features p {max-width: 400px; margin: 20px auto;}
+main .features p {
+    max-width: 400px;
+    margin: 20px auto;
+}
 
 .alert-warning {
     float: left;
@@ -118,23 +122,33 @@ form {
     margin-top: 575px;
     margin-right: 20px;
     background-color: #0DCAF0;
-    border-color: #808080;
+    border-color: #0DCAF0;
     border-width: 4px ;
     color: #000;
 }
 
 .btn-outline-secondary {
-    background-color: #808080;
-    border-color: #808080;
+    background-color: #BDBDBD;
+    border-color: #BDBDBD;
     margin-left: 150px;
     margin-top: -18px;
     color: #000;
+    transition: transform .4s ease;
 }
 
 .btn-outline-secondary:hover{
-    background-color: #808080;
-    border-color: #808080;
+    background-color: #BDBDBD;
+    border-color: #BDBDBD;
     transform: scale(1.04);
 }
 
+main .contacts {
+    text-decoration-line: none;
+    position: top;
+    list-style: none;
+    color: #23FAED;
+}
 
+main .btn-warning{
+    margin-top: 20px;
+}
