@@ -1,12 +1,13 @@
 from django.shortcuts import render
+from news.models import Articles
 
 
-# Create your views here.
 def index(request):
-    data = {
-        'title': 'Главная страница',
+    latest_news = [Articles.objects.order_by('date').last()]
+    context = {
+        'latest_news': latest_news
     }
-    return render(request, 'main/index.html', data)
+    return render(request, 'main/index.html', context)
 
 
 def about(request):

@@ -1,5 +1,7 @@
 body {
-    background: #2c2c2c;
+    background: url(../img/back.png);
+    background-size: 85% 100%;
+    background-position: right
 }
 
 aside {
@@ -11,6 +13,7 @@ aside {
     color: #fff;
     border-right: 5px solid #4d4d4d;
     text-decoration: none;
+    border-color: #A50382;
 }
 
 aside img {
@@ -43,23 +46,28 @@ aside ul li{
     margin-top: 13px;
     transition: transform .4s ease;
     text-decoration: none;
+
 }
 
 aside ul li:hover, aside ul a:hover {
-    color: #b74aed;
+    color: #ed4adf;
     transform: scale(1.05);
     text-decoration: none;
 }
 
 main .features {
     float: left;
-    color: #fff;
+    color: #22034b;
     margin-top: 100px;
     text-align: center;
     width: 75%;
 }
 
-main .features h1 {font-size: 50px;}
+main .features h1 {
+    font-size: 70px;
+    color: #fff;
+    margin-top: -15px;
+}
 main .features p {max-width: 400px; margin: 20px auto;}
 
 .alert-warning {
@@ -77,9 +85,6 @@ main .features p {max-width: 400px; margin: 20px auto;}
 
 }
 
-/* .fa-address-book {
-} */
-
 form {
     margin-left: 32%;
     width: 500px;
@@ -89,13 +94,11 @@ form {
 .invite {
     margin-left: -60px;
     width: 300px;
-    color: #e60606;
     position: absolute;
     bottom: 10px;
 }
 
 .invite:hover {
-    color: #b74aed;
     transform: scale(1.02);
 }
 
@@ -107,3 +110,31 @@ form {
 .logoname:hover {
     color: #b74aed;
 }
+
+.alert-light {
+    float: right;
+    width: 300px;
+    height: 120px;
+    margin-top: 575px;
+    margin-right: 20px;
+    background-color: #0DCAF0;
+    border-color: #808080;
+    border-width: 4px ;
+    color: #000;
+}
+
+.btn-outline-secondary {
+    background-color: #808080;
+    border-color: #808080;
+    margin-left: 150px;
+    margin-top: -18px;
+    color: #000;
+}
+
+.btn-outline-secondary:hover{
+    background-color: #808080;
+    border-color: #808080;
+    transform: scale(1.04);
+}
+
+
