@@ -30,7 +30,7 @@ aside .logo {
 }
 
 aside .navi {
-    margin-top: 40px;
+    margin-top: 50px;
     margin-left: 20px;
     font-size: 25px;
     text-decoration: none;
@@ -95,7 +95,7 @@ form {
     margin-top: 50px;
 }
 
-.invite {
+aside .invite {
     margin-left: -60px;
     width: 300px;
     position: absolute;
@@ -150,5 +150,13 @@ main .contacts {
 }
 
 main .btn-warning{
+    margin-top: 20px;
+}
+
+aside .navig{
+    margin-top: 45px;
+}
+
+aside .btn-info{
     margin-top: 20px;
 }
